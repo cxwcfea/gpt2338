@@ -21,24 +21,24 @@ class WebViewPageState extends State<WebViewPage> {
     super.initState();
     controller.setNavigationDelegate(
       NavigationDelegate(
-        onProgress: (int progress) {
-          print('progress----------$progress');
-        },
+        // onProgress: (int progress) {
+        //   print('progress----------$progress');
+        // },
         onPageStarted: (String url) {
           setState(() {
             _isLoading = true;
           });
-          print('Started-------$url');
+          // print('Started-------$url');
         },
         onPageFinished: (String url) {
           setState(() {
             _isLoading = false;
           });
-          print('Finished--------$url');
+          // print('Finished--------$url');
         },
-        onWebResourceError: (WebResourceError request) {
-          print('Error--------$request');
-        },
+        // onWebResourceError: (WebResourceError request) {
+        //   print('Error--------$request');
+        // },
         // onNavigationRequest: (NavigationRequest request) {
         //   return NavigationDecision.navigate;
         // },

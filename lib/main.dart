@@ -1,5 +1,7 @@
+// import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
-import 'package:gpt2338/widgets/web_view_page.dart';
+// import 'package:gpt2338/widgets/web_view_page.dart';
+import 'package:gpt2338/widgets/in_app_web_view_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const WebViewPage(),
+      home: const InAppWebViewPage(),
+      // home: const WebViewPage(),
     );
   }
 }
