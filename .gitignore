@@ -44,4 +44,4 @@ app.*.map.json
 /android/app/release
 
  **/android/key.>properties
-search_club.jks
+ gpt2338.jks
